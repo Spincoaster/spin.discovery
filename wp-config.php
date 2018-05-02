@@ -48,6 +48,8 @@ if ( getenv('ENV') != 'production' ) {
 	define( 'WP_DEBUG'        , true );
 	define( 'WP_DEBUG_DISPLAY', true );
 	define( 'WP_DEBUG_LOG'    , true );
+	define( 'WP_SITEURL'      , getenv('WP_URL') );
+	define( 'WP_HOME'         , getenv('WP_URL') );
 }
 
 define( 'AUTH_KEY'        , getenv('AUTH_KEY') );
