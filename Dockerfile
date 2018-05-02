@@ -10,8 +10,7 @@ RUN chmod +x /bin/wp-cli.phar
 RUN mv /bin/wp-cli.phar /usr/local/bin/wp
 
 RUN mkdir -p /scripts
-COPY ./cli.sh /scripts/cli.sh
-COPY ./wp-cli.yml /scripts/wp-cli.yml
-WORKDIR /scripts/
+COPY bin/cli /bin/cli.sh
+WORKDIR /bin/
 
 RUN a2enmod rewrite
