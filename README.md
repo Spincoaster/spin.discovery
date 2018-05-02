@@ -34,8 +34,9 @@ Refer [php-hawordpress-tutorial](https://docs.aws.amazon.com/ja_jp/elasticbeanst
 #### Deploy wordpress with Elastic Beanstalk
 
 1. Create .envrc. See .envrc.dist
-2. Run `bin/setup`
-3. Run `bin/deploy`
+2. Create elasticbeanstalk environment: `bin/setup`
+3. Setup ssh: `eb ssh --setup`
+3. Deploy: `bin/deploy`
 
 ## Import/Export
 
