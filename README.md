@@ -34,5 +34,10 @@ Refer [php-hawordpress-tutorial](https://docs.aws.amazon.com/ja_jp/elasticbeanst
 #### Deploy wordpress with Elastic Beanstalk
 
 1. Create .envrc. See .envrc.dist
-2. Run setup.sh: `./setup.sh`
-3. Run deploy.sh: `./deploy.sh`
+2. Run `bin/setup`
+3. Run `bin/deploy`
+
+## Import/Export
+
+- `bin/backup dump.sql`: Create database dump file from RDS
+- `bin/restore dump.sql`: Restore database dump file to docker db
