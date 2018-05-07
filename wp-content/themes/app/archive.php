@@ -5,7 +5,7 @@ if ( is_tax( 'events' ) ) {
   echo "<h1>LINEUP</h1>";
   query_posts( array (
       'post_type' => 'artist',
-      'events' => 'vol06',
+      'events' => 'vol-06',
       'posts_per_page' => 10,
   ) );
   if ( have_posts() ) :
