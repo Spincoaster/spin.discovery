@@ -26,6 +26,10 @@ define( 'DB_HOST'    , getenv('DB_HOST') );
 define( 'DB_CHARSET' , 'utf8' );
 define( 'DB_COLLATE' , '' );
 
+// ** AWS ACCESS KEYS ** //
+define( 'AS3CF_AWS_ACCESS_KEY_ID',     getenv('AWS_ACCESS_KEY_ID') );
+define( 'AS3CF_AWS_SECRET_ACCESS_KEY', getenv('AWS_SECRET_ACCESS_KEY') );
+
 /**
  * Authentication Unique Keys and Salts.
  *

@@ -12,4 +12,6 @@ wp plugin install disable-comments ${OPTS}
 wp plugin activate disable-comments ${OPTS}
 wp plugin install advanced-custom-fields ${OPTS}
 wp plugin activate advanced-custom-fields ${OPTS}
+wp plugin install amazon-s3-and-cloudfront ${OPTS}
+wp plugin activate amazon-s3-and-cloudfront ${OPTS}
 wp theme activate app ${OPTS}
