@@ -28,3 +28,4 @@ xmlrpc.php
 
 *~
 .DS_Store
+*.sql
