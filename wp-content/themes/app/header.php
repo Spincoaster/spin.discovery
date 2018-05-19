@@ -8,15 +8,12 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   </head>
   <body <?php body_class(); ?>>
-    <div
-      class="background"
-      style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/bg.jpg')"
-    ></div>
+
     <div id="page" class="site">
       <header>
         <nav class="navbar navbar-expand-md navbar-expand-lg">
           <a class="navbar-brand" href="/">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.jpg" />
+            <img class="navbar-logo-resize" src="<?php echo get_template_directory_uri(); ?>/assets/images/SD_logo2_yoko_w.jpg" />
           </a>
           <button
             class="navbar-toggler navbar-white"
@@ -40,6 +37,7 @@
           </div><!--/.nav-collapse -->
         </nav>
       </header>
+
       <?php
       if ( ( is_single() || ( is_page() ) ) && has_post_thumbnail( get_queried_object_id() ) ) :
       echo '<div class="single-featured-image-header">';
