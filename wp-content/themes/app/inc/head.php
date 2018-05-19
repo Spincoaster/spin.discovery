@@ -3,7 +3,7 @@
 function app_scripts() {
     wp_enqueue_style( 'font-oswald', '//fonts.googleapis.com/css?family=Oswald:400,700,300');
     wp_enqueue_style( 'font-roboto', '//fonts.googleapis.com/css?family=Roboto:400,400italic,700');
-
+    wp_enqueue_style( 'fontawesome', '//use.fontawesome.com/releases/v5.0.6/css/all.css');
     wp_enqueue_style( 'bootstrap-style', '//stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css');
     wp_enqueue_style( 'app-style', get_stylesheet_uri(), array('bootstrap-style') );
     wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.3.1.slim.min.js');
