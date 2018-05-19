@@ -12,8 +12,11 @@ if ( is_tax( 'events' ) ) {
     while ( have_posts() ) :
       the_post();
       $title = get_the_title();
-      echo $title;
+      echo '<p class="artist-title">'.$title.'<p>';
+      $custom_fields = get_post_meta(get_the_id(), 'twitter', true);
+      echo $custom_fields;
   ?>
+
   <div class="row artist">
     <div class="col-lg-5 col-md-5 col-sm-5">
     </div>
@@ -23,6 +26,7 @@ if ( is_tax( 'events' ) ) {
       ?>
     </div>
   </div>
+
 <?php
 endwhile;
 endif;
