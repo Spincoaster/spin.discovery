@@ -9,6 +9,34 @@ Template Name: top
 <?php $event = spin_get_event(); ?>
 
 <div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-11">
+    <h1 class="area-title">LINEUP</h1>
+  </div>
+  <?php
+  query_posts( array (
+    'post_type' => 'artist',
+    'events' => $event,
+    'posts_per_page' => 10,
+    'order' => 'ASC',
+    'orderby' => 'title',
+  ) );
+  if ( have_posts() ) {
+    while ( have_posts() ) {
+      the_post();
+      $title = get_the_title();
+      $image_id = get_post_meta(get_the_id(), 'image', true);
+      $image_src = wp_get_attachment_image($image_id, 'medium', false, array( 'class' => 'artist-image' ) );
+      echo '<div class="col-lg-6 col-sm-10 artist-container">';
+      echo $image_src;
+      echo '<p class="artist-title">'.$title.'</p>';
+      echo '</div>';
+    }
+  }
+  ?>
+</div>
+
+
+<div class="row">
   <div class="col-lg-6 col-md-6 col-sm-11">
     <h1 class="area-title">LATEST NEWS</h1>
     <div class="entry-list">
@@ -43,34 +71,7 @@ Template Name: top
 
   </div><!--about-->
 </div>
-<br><br>
 
-<div class="row">
-  <div class="col-lg-12 col-md-12 col-sm-11">
-    <h1 class="area-title">LINEUP</h1>
-  </div>
-    <?php
-    query_posts( array (
-      'post_type' => 'artist',
-      'events' => $event,
-      'posts_per_page' => 10,
-      'order' => 'ASC',
-      'orderby' => 'title',
-    ) );
-    if ( have_posts() ) {
-      while ( have_posts() ) {
-        the_post();
-        $title = get_the_title();
-        $image_id = get_post_meta(get_the_id(), 'image', true);
-        $image_src = wp_get_attachment_image($image_id, 'medium', false, array( 'class' => 'artist-image' ) );
-        echo '<div class="col-lg-6 col-sm-10 artist-container">';
-        echo $image_src;
-        echo '<p class="artist-title">'.$title.'</p>';
-        echo '</div>';
-      }
-    }
-    ?>
-</div>
 
 <div class="row">
   <div class="col-lg-6 col-md-6 col-sm-11">
