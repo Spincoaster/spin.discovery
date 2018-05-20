@@ -15,7 +15,7 @@
       <header>
         <nav class="navbar navbar-expand-md navbar-expand-lg">
           <a class="navbar-brand" href="/">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.jpg" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/brand.png" />
           </a>
           <button
             class="navbar-toggler navbar-white"
