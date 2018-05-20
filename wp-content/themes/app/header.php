@@ -45,6 +45,9 @@
       echo get_the_post_thumbnail( get_queried_object_id(), 'twentyseventeen-featured-image' );
       echo '</div><!-- .single-featured-image-header -->';
       endif;
+      if ( is_front_page() ) :
+        get_template_part( 'template-parts/header/header', 'image' );
+      endif;
       ?>
       <div class="site-content-contain">
         <div id="content" class="site-content">

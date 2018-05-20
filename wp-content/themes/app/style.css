@@ -205,6 +205,24 @@ header {
   margin-bottom:37px;
 }
 
+.header-image-container {
+  color: #fff;
+}
+
+.header-image {
+  width: 100%;
+}
+
+.header-image-caption {
+    float: center;
+    text-align: center;
+}
+
+.header-image-caption p {
+  font-size: 40px;
+  margin: 18px 0;
+}
+
 .navbar-nav {
   justify-content: flex-end;
   width: 100%;
