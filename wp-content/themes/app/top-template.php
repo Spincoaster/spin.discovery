@@ -45,6 +45,27 @@ Template Name: top
   <div class="col-lg-12 col-md-12 col-sm-12">
     <h1 class="area-title">LINEUP</h1>
   </div>
+    <?php
+    query_posts( array (
+      'post_type' => 'artist',
+      'events' => $event,
+      'posts_per_page' => 10,
+      'order' => 'ASC',
+      'orderby' => 'title',
+    ) );
+    if ( have_posts() ) {
+      while ( have_posts() ) {
+        the_post();
+        $title = get_the_title();
+        $image_id = get_post_meta(get_the_id(), 'image', true);
+        $image_src = wp_get_attachment_image($image_id, 'medium', false, array( 'class' => 'artist-image' ) );
+        echo '<div class="col-lg-6 col-sm-10 artist-container">';
+        echo $image_src;
+        echo '<p class="artist-title">'.$title.'</p>';
+        echo '</div>';
+      }
+    }
+    ?>
 </div>
 
 <?php
