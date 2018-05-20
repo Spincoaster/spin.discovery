@@ -34,6 +34,7 @@ a {
   height: 100%;
   z-index: -2;
   background-color: #000;
+  background-size: contain;
 }
 
 .area-title {
