@@ -49,7 +49,8 @@ function app_register_taxonomy() {
                 'all_items' => 'イベント一覧',
                 'add_new_item' => '新規イベントを追加'
             ),
-            'hierarchical' => false
+            'hierarchical' => false,
+            'show_admin_column' => true,
         )
     );
 }
