@@ -9,7 +9,7 @@ Template Name: top
 <?php $event = spin_get_event(); ?>
 
 <div class="row">
-  <div class="col-lg-7 col-md-7 col-sm-7">
+  <div class="col-lg-6 col-md-6 col-sm-11">
     <h1 class="area-title">LATEST NEWS</h1>
     <div class="entry-list">
       <?php
@@ -31,7 +31,7 @@ Template Name: top
     </div><br><br>
   </div><!--latest news-->
 
-  <div class="col-lg-5 col-md-5 col-sm-5">
+  <div class="col-lg-6 col-md-6 col-sm-11">
     <h1 class="area-title">ABOUT</h1>
     <div class="concept">
       <?php
@@ -46,7 +46,7 @@ Template Name: top
 <br><br>
 
 <div class="row">
-  <div class="col-lg-12 col-md-12 col-sm-12">
+  <div class="col-lg-12 col-md-12 col-sm-11">
     <h1 class="area-title">LINEUP</h1>
   </div>
     <?php
@@ -72,29 +72,18 @@ Template Name: top
     ?>
 </div>
 
-<?php
-query_posts( array (
-  'post_type' => 'artist',
-  'events' => 'vol06',
-  'posts_per_page' => 10,
-) );
-if ( have_posts() ) :
-  while ( have_posts() ) :
-    the_post();
-    $title = get_the_title();
-?>
-  <div class="row artist">
-    <div class="col-lg-5 col-md-5 col-sm-5">
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-6">
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-11">
+    <h1 class="area-title">TICKET</h1>
+    <div class="concept">
       <?php
-      echo '<h6 class="artist-name"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">'.$title.'</a></h6>';
+      $page_info = get_page_by_path('/'.$event.'/ticket');
+      $page = get_post($page_info);
+      echo $page->post_content;
       ?>
     </div>
-  </div>
-<?php
-endwhile;
-endif;
-?>
+  </div><!--ticket-->
+
+</div>
 
 <?php get_footer(); ?>
