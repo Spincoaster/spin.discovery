@@ -505,3 +505,13 @@ ul.navbar-nav {
     color: #FFF;
     padding: .5rem 1rem;
 }
+
+.lineup-artist-title {
+    font-size: 95px;
+    margin-top: 40px;
+}
+
+.lineup-artist-image {
+    width: 100%;
+    height: auto;
+}
