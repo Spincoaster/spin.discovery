@@ -35,6 +35,13 @@ a {
   z-index: -2;
   background-color: #000;
   background-size: cover;
+  background-image: url('./assets/images/bg.jpg')
+}
+
+@media (max-width: 768px) {
+  .background {
+    background-image: url('./assets/images/bg_sp.jpg')
+  }
 }
 
 .area-title {
@@ -219,6 +226,13 @@ a {
 header {
   background:#000;
   margin-bottom:37px;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    height: calc(100vh);
+    padding-top: 12%;
+  }
 }
 
 .header-image-container {
