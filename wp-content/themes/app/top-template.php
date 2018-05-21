@@ -26,7 +26,7 @@ Template Name: top
       $title = get_the_title();
       $image_id = get_post_meta(get_the_id(), 'image', true);
       $image_src = wp_get_attachment_image($image_id, 'medium', false, array( 'class' => 'artist-image' ) );
-      echo '<div class="col-lg-6 col-sm-10 artist-container">';
+      echo '<div class="col-lg-6 col-sm-12 artist-container">';
       echo $image_src;
       echo '<p class="artist-title">'.$title.'</p>';
       echo '</div>';
@@ -37,7 +37,7 @@ Template Name: top
 
 
 <div class="row">
-  <div class="col-lg-6 col-md-6 col-sm-11">
+  <div class="col-lg-6 col-md-6 col-sm-12">
     <h1 class="area-title">LATEST NEWS</h1>
     <div class="entry-list">
       <?php
@@ -59,7 +59,7 @@ Template Name: top
     </div><br><br>
   </div><!--latest news-->
 
-  <div class="col-lg-6 col-md-6 col-sm-11">
+  <div class="col-lg-6 col-md-6 col-sm-12">
     <h1 class="area-title">ABOUT</h1>
     <div class="concept">
       <?php
@@ -74,7 +74,7 @@ Template Name: top
 
 
 <div class="row">
-  <div class="col-lg-6 col-md-6 col-sm-11">
+  <div class="col-lg-6 col-md-6 col-sm-12">
     <h1 class="area-title">TICKET</h1>
     <div class="concept">
       <?php
