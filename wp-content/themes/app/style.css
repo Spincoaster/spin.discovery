@@ -230,13 +230,30 @@ header {
 }
 
 .header-image-caption {
-    float: center;
-    text-align: center;
+  font-size: 40px;
+  text-align: right;
+  font-weight: bold;
 }
 
 .header-image-caption p {
-  font-size: 40px;
   margin: 18px 0;
+}
+
+.header-image-caption p span {
+  word-break: keep-all;
+  word-wrap: normal;
+}
+
+@media (max-width: 768px) {
+  .header-image-caption p {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-image-caption p {
+    font-size: 24px;
+  }
 }
 
 .navbar-nav {
