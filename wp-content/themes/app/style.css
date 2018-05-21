@@ -192,6 +192,22 @@ a {
   padding-left: 0px;
 }
 
+@media (max-width: 768px) {
+  .navbar-brand > img {
+    width: 156px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand > img {
+    width: 128px;
+  }
+}
+
+.navbar-brand > img {
+  max-width: 202px;
+}
+
 .navbar-white.navbar-toggler {
   border-color: white;
 }
