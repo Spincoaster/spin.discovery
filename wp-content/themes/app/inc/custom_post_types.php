@@ -49,14 +49,23 @@ function app_register_taxonomy() {
                 'all_items' => 'イベント一覧',
                 'add_new_item' => '新規イベントを追加'
             ),
-            'hierarchical' => false
+            'hierarchical' => false,
+            'show_admin_column' => true,
         )
     );
+}
+
+function app_set_order_lineup($query) {
+    if ( is_archive() && is_tax( 'events' )):
+        $query->set( 'order', 'ASC' );
+        $query->set( 'orderby', 'title' );
+    endif;
 }
 
 function app_setup_custom_post_types() {
     app_register_artist();
     app_register_taxonomy();
+    add_action( 'pre_get_posts', 'app_set_order_lineup');
 }
 
 add_action( 'init', 'app_setup_custom_post_types' );

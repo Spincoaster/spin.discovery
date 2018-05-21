@@ -1,3 +1,4 @@
+<?php $event = spin_get_event(); ?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -15,7 +16,7 @@
       <header>
         <nav class="navbar navbar-expand-md navbar-expand-lg">
           <a class="navbar-brand" href="/">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.jpg" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/brand.png" />
           </a>
           <button
             class="navbar-toggler navbar-white"
@@ -31,10 +32,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav navbar-right mr-auto">
               <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
-              <li class="nav-item"><a class="nav-link" href="/events/vol-06" >LINEUP</a></li>
-              <li class="nav-item"><a class="nav-link" href="/vol-06/timetable" >TIMETABLE</a></li>
-              <li class="nav-item"><a class="nav-link" href="/vol-06/ticket" >TICKET</a></li>
-              <li class="nav-item"><a class="nav-link" href="/vol-06/access" >ACCESS</a></li>
+              <li class="nav-item"><a class="nav-link" href="/events/<?= $event ?>" >LINEUP</a></li>
+              <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/timetable" >TIMETABLE</a></li>
+              <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/ticket" >TICKET</a></li>
+              <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/access" >ACCESS</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </nav>
@@ -44,6 +45,9 @@
       echo '<div class="single-featured-image-header">';
       echo get_the_post_thumbnail( get_queried_object_id(), 'twentyseventeen-featured-image' );
       echo '</div><!-- .single-featured-image-header -->';
+      endif;
+      if ( is_front_page() ) :
+        get_template_part( 'template-parts/header/header', 'image' );
       endif;
       ?>
       <div class="site-content-contain">

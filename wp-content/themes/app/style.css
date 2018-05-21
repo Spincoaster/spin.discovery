@@ -34,6 +34,7 @@ a {
   height: 100%;
   z-index: -2;
   background-color: #000;
+  background-size: contain;
 }
 
 .area-title {
@@ -41,8 +42,8 @@ a {
   margin-bottom: 20px;
 }
 
-.row.artist {
-  height: 300px;
+.artist-container {
+  margin: 28px 0;
 }
 
 .artist-name {
@@ -50,7 +51,12 @@ a {
 }
 
 .artist-title {
-  font-size: 14px;
+  font-size: 28px;
+}
+.artist-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 .site_footer {
@@ -197,6 +203,24 @@ a {
 header {
   background:#000;
   margin-bottom:37px;
+}
+
+.header-image-container {
+  color: #fff;
+}
+
+.header-image {
+  width: 100%;
+}
+
+.header-image-caption {
+    float: center;
+    text-align: center;
+}
+
+.header-image-caption p {
+  font-size: 40px;
+  margin: 18px 0;
 }
 
 .navbar-nav {
@@ -480,4 +504,14 @@ ul.navbar-nav {
     background-color: #000;
     color: #FFF;
     padding: .5rem 1rem;
+}
+
+.lineup-artist-title {
+    font-size: 95px;
+    margin-top: 40px;
+}
+
+.lineup-artist-image {
+    width: 100%;
+    height: auto;
 }
