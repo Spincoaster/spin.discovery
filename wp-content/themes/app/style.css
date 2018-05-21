@@ -13,6 +13,8 @@ Text Domain: app
 
 body {
   font-size: 14px;
+  height:100%;
+  background-color: #000;
 }
 
 h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12 {
@@ -35,7 +37,8 @@ a {
   z-index: -2;
   background-color: #000;
   background-size: cover;
-  background-image: url('./assets/images/bg.jpg')
+  background-image: url('./assets/images/bg.jpg');
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
