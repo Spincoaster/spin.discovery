@@ -94,4 +94,7 @@ Template Name: top
 <br>
 <br>
 
+
+<iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fdiscovery.spincoaster.com%2F&width=119&layout=button&action=like&size=small&show_faces=true&share=true&height=65" width="119" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
 <?php get_footer(); ?>
