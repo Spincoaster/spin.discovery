@@ -8,10 +8,7 @@
     <title><?php wp_title( '|', true, 'right' ); ?></title>
   </head>
   <body <?php body_class(); ?>>
-    <div
-      class="background"
-      style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/bg.jpg')"
-    ></div>
+    <div class="background"></div>
     <div id="page" class="site">
       <header>
         <nav class="navbar navbar-expand-md navbar-expand-lg">
