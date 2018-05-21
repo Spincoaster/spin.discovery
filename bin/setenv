@@ -1,11 +1,6 @@
 #!/bin/bash -eux
 
 ENVIRONMENT=${EB_ENVIRONMENT}
-VPC_ID=${EB_VPC_ID}
-VPC_SUBNETS=${EB_VPC_SUBNETS}
-VPC_SECURITYGROUPS=${EB_VPC_SECURITYGROUPS}
-
-eb create ${ENVIRONMENT} --vpc --elb-type application --platform php-7.0 --vpc.id=${VPC_ID} --vpc.ec2subnets=${VPC_SUBNETS} --vpc.elbsubnets=${VPC_SUBNETS} --vpc.publicip --vpc.elbpublic --vpc.securitygroups=${VPC_SECURITYGROUPS}
 
 eb setenv -e ${ENVIRONMENT}\
    ENV=${ENV}\
