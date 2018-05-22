@@ -13,6 +13,11 @@ function app_scripts() {
         '//stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js',
         array('jquery', 'popper')
     );
+    wp_enqueue_script(
+        'app-js',
+        get_theme_file_uri().'/assets/js/app.js',
+        array('jquery')
+    );
 }
 
 add_action( 'wp_enqueue_scripts', 'app_scripts' );
