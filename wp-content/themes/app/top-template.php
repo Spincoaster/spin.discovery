@@ -25,7 +25,7 @@ Template Name: top
       the_post();
       $title = get_the_title();
       $image_id = get_post_meta(get_the_id(), 'image', true);
-      $image_src = wp_get_attachment_image($image_id, 'medium', false, array( 'class' => 'artist-image' ) );
+      $image_src = wp_get_attachment_image($image_id, 'large', false, array( 'class' => 'artist-image' ) );
       echo '<div class="col-lg-6 col-sm-12 artist-container">';
       echo $image_src;
       echo '<p class="artist-title">'.$title.'</p>';
