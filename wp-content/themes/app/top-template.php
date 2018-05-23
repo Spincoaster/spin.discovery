@@ -94,7 +94,17 @@ Template Name: top
 <br>
 <br>
 
+<div class="row">
+  <div class="col-lg-2 col-md-1 col-sm-1">
+    <p><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+    <p><iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fdiscovery.spincoaster.com%2F&width=119&layout=button&action=like&size=small&show_faces=true&share=true&height=65" width="119" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></p>
+    <div class="line-it-button" data-lang="ja" data-type="share-a" data-url="http://discovery.spincoaster.com/" style="display: none;"></div>
+    <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+  </div>
+</div>
 
-<iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fdiscovery.spincoaster.com%2F&width=119&layout=button&action=like&size=small&show_faces=true&share=true&height=65" width="119" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<br>
+<br>
+
 
 <?php get_footer(); ?>
