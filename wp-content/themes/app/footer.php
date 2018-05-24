@@ -39,9 +39,9 @@
 
          <div class="footer_log">
            <div class="footer_item_spinIcon">
-             <div href="https://spincoaster.com/">
+             <a href="https://spincoaster.com/">
                　<img class="spinIcon" src="<?php echo get_template_directory_uri(); ?>/assets/images/Spincoaster_log.jpg" alt="spin_link">
-             </div>
+             </a>
            </div>
          </div>
           </div>
