@@ -116,6 +116,7 @@ a {
 .footer_item_spinIcon:hover {
   filter:alpha(opacity=80);
   opacity:0.8;
+  outline:none
 }
 
 .spinIcon {
