@@ -15,25 +15,25 @@ if ( is_tax( 'events' ) ) {
 
       echo '<div class="row">';
 
-      echo '  <div class="col-12">';
+      echo '  <div class="col-lg-12 col-sm-12">';
       echo '  <h2 class="lineup-artist-title">'.$title.'</h2>';
       echo '</div>';
 
-      echo '<div class="col-6">';
+      echo '<div class="col-lg-6 col-sm-12">';
       echo wp_get_attachment_image($image_id, 'large', false, array( 'class' => 'lineup-artist-image' ));
       echo '</div>';
 
-      echo '<div class="col-6">';
+      echo '<div class="col-lg-6 col-sm-12">';
       echo '  <div class="row">';
-      echo '    <div class="col-12">';
+      echo '    <div class="col-lg-12 col-sm-12">';
       echo '      <p>'.$content.'</p>';
       echo '    </div>';
 
-      echo '    <div class="col-12">';
-      echo '      <iframe src="'.$youtube.'" allow="autoplay; encrypted-media" allowfullscreen="" width="500" height="281" frameborder="0"></iframe>';
+      echo '    <div class="col-lg-12 col-sm-12">';
+      echo '      <iframe src="'.$youtube.'" allow="autoplay; encrypted-media" allowfullscreen="" width="100%" height="300" frameborder="0"></iframe>';
       echo '    </div>';
 
-      echo '    <div class="col-12">';
+      echo '    <div class="col-lg-12 col-sm-12">';
       echo '      <p>social links</p>';
       echo '    </div>';
       echo '  </div>';
