@@ -243,6 +243,15 @@ header {
   margin-bottom:37px;
 }
 
+.header-video {
+  cursor: url(./assets/images/unmuted.png), auto;
+
+}
+
+.header-video--muted {
+  cursor: url(./assets/images/muted.png), auto;
+}
+
 @media (max-width: 1200px) {
   .header-container {
     margin-left: 0px;

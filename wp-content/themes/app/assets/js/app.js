@@ -35,6 +35,11 @@ jQuery(function() {
   var $video = $('#header-video');
   $video.click(function() {
     $video.prop('muted', !$video.prop('muted'));
+    if ($video.prop('muted')) {
+      $video.addClass('header-video--muted');
+    } else {
+      $video.removeClass('header-video--muted');
+    }
   });
   var $videoButton = $('#header-video-button');
   $videoButton.click(function() {
@@ -60,4 +65,9 @@ jQuery(function() {
       this.pause();
     }
   });
+  if ($video.prop('muted')) {
+      $video.addClass('header-video--muted');
+    } else {
+      $video.removeClass('header-video--muted');
+    }
 });
