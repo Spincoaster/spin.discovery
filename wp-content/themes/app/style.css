@@ -243,10 +243,19 @@ header {
   margin-bottom:37px;
 }
 
-@media (max-width: 768px) and (orientation: portrait) {
+.header-container {
+  margin-left: -100px;
+  margin-right: -100px;
+}
+
+@media (max-width: 1200px) {
   .header-container {
-    height: calc(100vh);
-    padding-top: 12%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .header-video-container {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 

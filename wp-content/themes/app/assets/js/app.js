@@ -16,10 +16,6 @@ jQuery(function() {
       h = width * imageHeight / imageWidth;
     }
 
-    $('.header-container').css({
-      width: width,
-      height: height
-    });
     $('.background').css({
       backgroundSize: w + 'px ' + h + 'px'
     });
