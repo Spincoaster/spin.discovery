@@ -38,6 +38,26 @@ jQuery(function() {
   });
   var $videoButton = $('#header-video-button');
   $videoButton.click(function() {
-    $video.get(0).play();
+    var video = $video.get(0);
+    $video.prop('muted', false);
+    video.play();
+    if (!!video.requestFullScreen) {
+      video.requestFullScreen();
+    } else if (!!video.webkitRequestFullScreen) {
+      video.webkitRequestFullScreen();
+    } else if (!!video.webkitEnterFullscreen) {
+      video.webkitEnterFullscreen();
+    }
+  });
+  $video.on('fullscreenchange webkitfullscreenchange', function(event) {
+    var isFullScreen = true;
+    if (typeof document.fullscreenEnabled !== 'undefined') {
+      isFullScreen = document.fullscreenEnabled;
+    } else if (typeof document.webkitIsFullScreen !== 'undefined') {
+      isFullScreen = document.webkitIsFullScreen;
+    }
+    if (!isFullScreen) {
+      this.pause();
+    }
   });
 });
