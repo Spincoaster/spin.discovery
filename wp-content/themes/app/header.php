@@ -8,6 +8,15 @@
     <title><?php wp_title( '|', true, 'right' ); ?></title>
   </head>
   <body <?php body_class(); ?>>
+    <?php if ( is_front_page() ) : ?>
+    <video
+      id="header-video"
+      class="header-video"
+      width="100%"
+      muted autoplay loop
+      src="//d1rm4mnq8j8biv.cloudfront.net/files/vol-07.mp4"
+      poster="<?php echo get_template_directory_uri(); ?>/assets/video/vol-07-poster.png"></video>
+    <?php endif; ?>
     <div class="background"></div>
     <div id="page" class="site">
       <header>
@@ -44,6 +53,7 @@
       endif;
       if ( is_front_page() ) :
         get_template_part( 'template-parts/header/header', 'image' );
+        echo '<div id="header-video-button" class="header-video-button"></div>';
       endif;
       ?>
       <div class="site-content-contain">

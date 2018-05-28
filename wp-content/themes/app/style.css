@@ -243,10 +243,23 @@ header {
   margin-bottom:37px;
 }
 
-@media (max-width: 768px) and (orientation: portrait) {
+@media (max-width: 1200px) {
   .header-container {
-    height: calc(100vh);
-    padding-top: 12%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .header-video {
+    display: none;
+  }
+  .header-video-button {
+    display: block;
+    width: 130px;
+    height: 111px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-image: url('./assets/images/play.png');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 

@@ -16,10 +16,6 @@ jQuery(function() {
       h = width * imageHeight / imageWidth;
     }
 
-    $('.header-container').css({
-      width: width,
-      height: height
-    });
     $('.background').css({
       backgroundSize: w + 'px ' + h + 'px'
     });
@@ -36,4 +32,12 @@ jQuery(function() {
   if (isIOS()) {
     setWindowHeight();
   }
+  var $video = $('#header-video');
+  $video.click(function() {
+    $video.prop('muted', !$video.prop('muted'));
+  });
+  var $videoButton = $('#header-video-button');
+  $videoButton.click(function() {
+    $video.get(0).play();
+  });
 });
