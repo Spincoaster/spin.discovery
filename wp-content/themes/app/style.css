@@ -110,13 +110,13 @@ a {
   margin: 10px;
   padding: 10px;
   display: inline;
-  background-color: #000
+  background-color: #000;
 }
 
 .footer_item_spinIcon:hover {
   filter:alpha(opacity=80);
   opacity:0.8;
-  outline:none
+  outline:none;
 }
 
 .spinIcon {
