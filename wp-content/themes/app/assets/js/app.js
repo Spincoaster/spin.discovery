@@ -2,6 +2,7 @@ jQuery(function() {
   var $ = jQuery;
   var imageWidth = 1005;
   var imageHeight =  1348;
+  var $video = $('#header-video');
 
   function setWindowHeight() {
     var height = $(window).height();
@@ -32,7 +33,6 @@ jQuery(function() {
   if (isIOS()) {
     setWindowHeight();
   }
-  var $video = $('#header-video');
   $video.click(function() {
     $video.prop('muted', !$video.prop('muted'));
     if ($video.prop('muted')) {
@@ -66,8 +66,17 @@ jQuery(function() {
     }
   });
   if ($video.prop('muted')) {
-      $video.addClass('header-video--muted');
-    } else {
-      $video.removeClass('header-video--muted');
-    }
+    $video.addClass('header-video--muted');
+  } else {
+    $video.removeClass('header-video--muted');
+  }
+
+  var height = $(window).height();
+  $video.attr('height', height + 'px');
+  if ($video.is(':visible')) {
+    $('#header-video-scroll-button').click(function(e) {
+      $('html,body').animate({ scrollTop: $('#nav-logo').offset().top });
+      e.preventDefault();
+    });
+  }
 });
