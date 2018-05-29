@@ -243,10 +243,46 @@ header {
   margin-bottom:37px;
 }
 
-@media (max-width: 768px) and (orientation: portrait) {
+.header-video {
+  cursor: url(./assets/images/unmuted.png), auto;
+}
+
+.header-video--muted {
+  cursor: url(./assets/images/muted.png), auto;
+}
+
+.header-video-scroll-button {
+  position: absolute;
+  display: inline;
+  bottom: 12px;
+  left: calc(50% - 44px);
+  width: 88px;
+  height: 44px;
+  background-image: url(./assets/images/direction.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
   .header-container {
-    height: calc(100vh);
-    padding-top: 12%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .header-video {
+    display: none;
+  }
+  .header-video-scroll-button {
+    display: none;
+  }
+  .header-video-button {
+    display: block;
+    width: 130px;
+    height: 111px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-image: url('./assets/images/play.png');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
