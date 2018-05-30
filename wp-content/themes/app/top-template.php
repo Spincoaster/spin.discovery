@@ -17,8 +17,6 @@ Template Name: top
     'post_type' => 'artist',
     'events' => $event,
     'posts_per_page' => 10,
-    'order' => 'ASC',
-    'orderby' => 'title',
   ) );
   if ( have_posts() ) {
     while ( have_posts() ) {
