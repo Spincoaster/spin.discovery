@@ -1,4 +1,3 @@
-<html>
   <footer id="footer">
    <div class="site_footer">
      <div class="col-lg-12 col-md-12 col-sm-12">
@@ -55,5 +54,4 @@
 
    </div>
   </footer>
-</html>
 <?php wp_footer(); ?>
