@@ -8,7 +8,7 @@ Template Name: top
 
 <?php $event = spin_get_event(); ?>
 
-<div class="row">
+<div class="row justify-content-center">
   <div class="col-lg-12 col-md-12 col-sm-11">
     <h1 class="area-title">LINEUP</h1>
   </div>
@@ -17,8 +17,6 @@ Template Name: top
     'post_type' => 'artist',
     'events' => $event,
     'posts_per_page' => 10,
-    'order' => 'ASC',
-    'orderby' => 'title',
   ) );
   if ( have_posts() ) {
     while ( have_posts() ) {
