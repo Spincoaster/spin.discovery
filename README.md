@@ -36,7 +36,8 @@ Refer [php-hawordpress-tutorial](https://docs.aws.amazon.com/ja_jp/elasticbeanst
 1. Create .envrc. See .envrc.dist
 2. Create elasticbeanstalk environment: `bin/setup`
 3. Setup ssh: `eb ssh --setup`
-3. Deploy: `bin/deploy`
+  - Edit ip in `WP_SSH` with the connected ec2 instance
+4. Deploy: `bin/deploy`
 
 ## Import/Export
 

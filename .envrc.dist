@@ -16,6 +16,7 @@ export LOGGED_IN_SALT="xxxxxx"
 export NONCE_SALT="xxxxxx"
 
 # For wordpress cli
+export WP_SSH=ec2-user@xx.xx.xx.xx/var/www/html/ # check ec2 instance ip by `eb ssh`
 export WP_URL=http://wordpress.xxxxxxxx.ap-northeast-1.elasticbeanstalk.com/
 export WP_TITLE=SPIN.DISCOVERY
 export WP_ADMIN_USER=admin
