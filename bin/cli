@@ -12,5 +12,7 @@ wp plugin install amazon-s3-and-cloudfront ${OPTS}
 wp plugin activate amazon-s3-and-cloudfront ${OPTS}
 wp plugin install wordpress-seo ${OPTS}
 wp plugin activate wordpress-seo ${OPTS}
+wp plugin install intuitive-custom-post-order ${OPTS}
+wp plugin activate intuitive-custom-post-order ${OPTS}
 
 wp theme activate app ${OPTS}
