@@ -24,7 +24,7 @@ if ( is_tax( 'events' ) ) {
       echo '<div class="row">';
 
       echo '  <div class="col-lg-12 col-sm-12">';
-      echo '  <h2 class="lineup-artist-title">'.$title.'</h2>';
+      echo '  <h2 class="lineup-artist-title" id="'.$title.'">'.$title.'</h2>';
       echo '</div>';
 
       echo '<div class="lineup-image col-lg-6 col-sm-12">';
