@@ -18,15 +18,17 @@ Template Name: top
     'events' => $event,
     'posts_per_page' => 10,
   ) );
+
   if ( have_posts() ) {
     while ( have_posts() ) {
       the_post();
       $title = get_the_title();
       $image_id = get_post_meta(get_the_id(), 'image', true);
       $image_src = wp_get_attachment_image($image_id, 'large', false, array( 'class' => 'artist-image' ) );
+
       echo '<div class="col-lg-6 col-sm-12 artist-container">';
-      echo $image_src;
-      echo '<p class="artist-title">'.$title.'</p>';
+      echo '<a href="http://192.168.99.100/events/vol-07/#'.$title.'">'.$image_src.'</a>';
+      echo '<p class="artist-title"><a href="/events/vol-07/#'.$title.'" style="color:#fff;">'.$title.'</a></p>';
       echo '</div>';
     }
   }
