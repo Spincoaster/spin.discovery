@@ -28,7 +28,7 @@ Template Name: top
 
       echo '<div class="col-lg-6 col-sm-12 artist-container">';
       echo '<a href="http://192.168.99.100/events/vol-07/#'.$title.'">'.$image_src.'</a>';
-      echo '<p class="artist-title"><a href="http://192.168.99.100/events/vol-07/#'.$title.'" style="color:#fff;">'.$title.'</a></p>';
+      echo '<p class="artist-title"><a href="/events/vol-07/#'.$title.'" style="color:#fff;">'.$title.'</a></p>';
       echo '</div>';
     }
   }
