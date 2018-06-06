@@ -46,6 +46,18 @@ a {
   }
 }
 
+.top-timetable-img {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .top-timetable-img {
+    width: 100%;
+  }
+}
+
 .area-title {
   margin-top: 20px;
   margin-bottom: 20px;
