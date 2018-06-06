@@ -50,6 +50,7 @@
             <ul class="navbar-nav navbar-right mr-auto">
               <li id="nav-home" class="nav-item"><a class="nav-link" href="/">HOME</a></li>
               <li class="nav-item"><a class="nav-link" href="/events/<?= $event ?>" >LINEUP</a></li>
+              <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/timetable" >TIMETABLE</a></li>
               <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/ticket" >TICKET</a></li>
               <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/access" >ACCESS</a></li>
             </ul>
