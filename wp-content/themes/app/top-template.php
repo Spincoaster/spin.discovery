@@ -10,7 +10,7 @@ Template Name: top
 
 <div class="row justify-content-center">
   <div class="col-lg-12 col-md-12 col-sm-11">
-    <h1 class="area-title">LINEUP</h1>
+    <!-- <h1 class="area-title">LINEUP</h1> -->
   </div>
   <?php
   query_posts( array (
@@ -27,8 +27,8 @@ Template Name: top
       $image_src = wp_get_attachment_image($image_id, 'large', false, array( 'class' => 'artist-image' ) );
 
       echo '<div class="col-lg-6 col-sm-12 artist-container">';
-      echo '<a href="/events/vol-07/#'.$title.'">'.$image_src.'</a>';
-      echo '<p class="artist-title"><a href="/events/vol-07/#'.$title.'" style="color:#fff;">'.$title.'</a></p>';
+      echo '<a href="/events/'.$event.'/#'.$title.'">'.$image_src.'</a>';
+      echo '<p class="artist-title"><a href="/events/'.$event.'/#'.$title.'" style="color:#fff;">'.$title.'</a></p>';
       echo '</div>';
     }
   }
@@ -38,7 +38,7 @@ Template Name: top
 
 <div class="row">
   <div class="col-lg-6 col-md-6 col-sm-12">
-    <h1 class="area-title">LATEST NEWS</h1>
+    <h1 class="area-title">NEWS</h1>
     <div class="entry-list">
       <?php
       query_posts( array ( 'category_name' => $event, 'posts_per_page' => 5 ) );
@@ -86,8 +86,8 @@ Template Name: top
   </div><!--ticket-->
 
   <div class="col-lg-6 col-md-6 col-sm-12">
-    <h1 class="area-title">EVENT PLAYLIST</h1>
-    <iframe src="https://open.spotify.com/embed?uri=spotify:user:spincoaster:playlist:5aB2BqNYfsBRQUeY5qHOAm" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <!-- <h1 class="area-title">EVENT PLAYLIST</h1>
+    <iframe src="https://open.spotify.com/embed?uri=spotify:user:spincoaster:playlist:5aB2BqNYfsBRQUeY5qHOAm" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
   </div>
 </div>
 

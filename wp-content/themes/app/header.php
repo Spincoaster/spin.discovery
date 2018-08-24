@@ -9,7 +9,7 @@
   </head>
   <body <?php body_class(); ?>>
     <div class="background"></div>
-    <?php if ( is_front_page() ) : ?>
+    <!-- <?php if ( is_front_page() ) : ?>
     <video
       id="header-video"
       class="header-video"
@@ -20,7 +20,7 @@
       poster="<?php echo get_template_directory_uri(); ?>/assets/video/vol-07-poster.png">
     </video>
     <div id="header-video-scroll-button" class="header-video-scroll-button"></div>
-    <?php endif; ?>
+    <?php endif; ?> -->
     <div id="page" class="site">
       <header>
         <nav class="navbar navbar-expand-md navbar-expand-lg">
@@ -41,7 +41,8 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav navbar-right mr-auto">
               <li id="nav-home" class="nav-item"><a class="nav-link" href="/">HOME</a></li>
-              <li class="nav-item"><a class="nav-link" href="/events/<?= $event ?>" >LINEUP</a></li>
+              <!-- <li class="nav-item"><a class="nav-link" href="/events/<?= $event ?>" >LINEUP</a></li> -->
+              <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/about" >ABOUT</a></li>
               <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/ticket" >TICKET</a></li>
               <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/access" >ACCESS</a></li>
             </ul>
@@ -56,7 +57,7 @@
       endif;
       if ( is_front_page() ) :
         get_template_part( 'template-parts/header/header', 'image' );
-        echo '<div id="header-video-button" class="header-video-button"></div>';
+        // echo '<div id="header-video-button" class="header-video-button"></div>';
       endif;
       ?>
       <div class="site-content-contain">
