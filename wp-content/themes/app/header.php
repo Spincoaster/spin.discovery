@@ -16,7 +16,7 @@
       width="100%"
       muted autoplay loop
       preload="metadata"
-      src="SD8_CM.mp4"
+      src="wp-content/themes/app/assets/images/SD8_CM.mp4"
       poster="<?php echo get_template_directory_uri(); ?>/assets/images/SD8_CM.mp4">
     </video>
     <div id="header-video-scroll-button" class="header-video-scroll-button"></div>
