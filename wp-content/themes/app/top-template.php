@@ -10,7 +10,7 @@ Template Name: top
 
 <div class="row justify-content-center">
   <div class="col-lg-12 col-md-12 col-sm-11">
-    <!-- <h1 class="area-title">LINEUP</h1> -->
+    <h1 class="area-title">LINEUP</h1>
   </div>
   <?php
   query_posts( array (
