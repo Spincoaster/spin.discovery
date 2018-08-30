@@ -35,7 +35,6 @@ Template Name: top
   ?>
 </div>
 
-<img class="top-timetable-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/timetable.jpg" />
 
 <div class="row">
   <div class="col-lg-6 col-md-6 col-sm-12">
