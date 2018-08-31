@@ -27,8 +27,8 @@ Template Name: top
       $image_src = wp_get_attachment_image($image_id, 'large', false, array( 'class' => 'artist-image' ) );
 
       echo '<div class="col-lg-6 col-sm-12 artist-container">';
-      echo $image_src;
-      echo '<p class="artist-title">'.$title.'</p>';
+      echo '<a href="/events/'.$event.'/#'.$title.'">'.$image_src.'</a>';
+      echo '<p class="artist-title"><a href="/events/'.$event.'/#'.$title.'" style="color:#fff;">'.$title.'</a></p>';
       echo '</div>';
     }
   }
