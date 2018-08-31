@@ -25,7 +25,7 @@
       muted autoplay loop
       preload="metadata"
       src="//d1rm4mnq8j8biv.cloudfront.net/files/vol-08.mp4"
-      poster="<?php echo get_template_directory_uri(); ?>/assets/images/SD8_CM.mp4">
+      poster="<?php echo get_template_directory_uri(); ?>/assets/images/vol-08-cm-poster.jpg">
     </video>
     <div id="header-video-scroll-button" class="header-video-scroll-button"></div>
     <?php endif; ?>
