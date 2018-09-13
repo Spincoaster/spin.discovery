@@ -29,7 +29,7 @@ Template Name: top
 
       echo '<div class="col-lg-6 col-sm-12 artist-container">';
       echo '<a href="/events/'.$event.'/#'.$title.'">'.$image_src.'</a>';
-      echo '<div class="artist-title"><p class="artist-title-name" href="/events/'.$event.'/#'.$title.'" style="color:#fff;">'.$title.'</p><p class="artist-title-time" href="/events/'.$event.'/#'.$cast_time.'" style="color:#fff;">'.$cast_time.'</p></div>';
+      echo '<div class="artist-title"><p class="artist-title-name" href="/events/'.$event.'/#'.$title.'" style="color:#fff;">'.$title.'</p><p class="artist-title-time" href="/events/'.$event.'/#'.$cast_time.'>'.$cast_time.'</p></div>';
       echo '</div>';
     }
   }
