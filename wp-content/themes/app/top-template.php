@@ -23,12 +23,13 @@ Template Name: top
     while ( have_posts() ) {
       the_post();
       $title = get_the_title();
+      $cast_time = get_post_meta(get_the_id(), 'cast_time', true);
       $image_id = get_post_meta(get_the_id(), 'image', true);
       $image_src = wp_get_attachment_image($image_id, 'large', false, array( 'class' => 'artist-image' ) );
 
       echo '<div class="col-lg-6 col-sm-12 artist-container">';
       echo '<a href="/events/'.$event.'/#'.$title.'">'.$image_src.'</a>';
-      echo '<p class="artist-title"><a href="/events/'.$event.'/#'.$title.'" style="color:#fff;">'.$title.'</a></p>';
+      echo '<div class="artist-title"><a class="artist-title-name" href="/events/'.$event.'/#'.$title.'" style="color:#fff;">'.$title.'</a><a class="artist-title-time">'.$cast_time.'</a></div>';
       echo '</div>';
     }
   }
