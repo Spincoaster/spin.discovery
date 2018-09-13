@@ -73,7 +73,19 @@ a {
 
 .artist-title {
   font-size: 28px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.artist-title-name {
+  display: flex;
+}
+
+.artist-title-time{
+  display: flex;
+  margin-left: 2rem;
+}
+
 .artist-image {
   width: 100%;
   height: 450px;
