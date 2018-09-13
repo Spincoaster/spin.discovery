@@ -81,9 +81,9 @@ a {
   display: flex;
 }
 
-.artist-title-time{
+.artist-title-time {
   display: flex;
-  margin-left: 2rem;
+  style="color:#fff;
 }
 
 .artist-image {
