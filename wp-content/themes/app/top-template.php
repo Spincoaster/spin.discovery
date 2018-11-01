@@ -29,7 +29,8 @@ Template Name: top
 
       echo '<div class="col-lg-6 col-sm-12 artist-container">';
       echo '<a href="/events/'.$event.'/#'.$title.'">'.$image_src.'</a>';
-      echo '<div class="artist-title"><a class="artist-title-name" href="/events/'.$event.'/#'.$title.'" style="color:#fff;">'.$title.'</a><a class="artist-title-time">'.$cast_time.'</a></div>';
+      // echo '<div class="artist-title"><a class="artist-title-name" href="/events/'.$event.'/#'.$title.'" style="color:#fff;">'.$title.'</a><a class="artist-title-time">'.$cast_time.'</a></div>';
+      echo '<div class="artist-title"><a class="artist-title-name" href="/events/'.$event.'/#'.$title.'" style="color:#fff;">'.$title.'</a></div>';
       echo '</div>';
     }
   }
@@ -86,10 +87,10 @@ Template Name: top
     </div>
   </div><!--ticket-->
 
-  <div class="col-lg-6 col-md-6 col-sm-12">
+  <!-- <div class="col-lg-6 col-md-6 col-sm-12">
     <h1 class="area-title">EVENT PLAYLIST</h1>
     <iframe src="https://open.spotify.com/embed/user/spincoaster/playlist/5aB2BqNYfsBRQUeY5qHOAm" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-  </div>
+  </div> -->
 </div>
 
 <br>
