@@ -54,6 +54,8 @@ if ( getenv('ENV') != 'production' ) {
 	define( 'WP_DEBUG_LOG'    , true );
 	define( 'WP_SITEURL'      , getenv('WP_URL') );
 	define( 'WP_HOME'         , getenv('WP_URL') );
+} else {
+	$_SERVER['HTTPS'] = 'on';
 }
 
 define( 'AUTH_KEY'        , getenv('AUTH_KEY') );
