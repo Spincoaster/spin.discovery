@@ -4,6 +4,7 @@ ENVIRONMENT=${EB_ENVIRONMENT}
 
 eb setenv -e ${ENVIRONMENT}\
    ENV=${ENV}\
+   WP_URL=${WP_URL}\
    DB_NAME=${DB_NAME}\
    DB_USER=${DB_USER}\
    DB_PASS=${DB_PASS}\
