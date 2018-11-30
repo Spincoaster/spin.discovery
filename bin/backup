@@ -5,4 +5,4 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-wp db export --ssh=${WP_SSH} --path=${WP_PATH} - > $1
+eb ssh --quiet --command "mysqldump -u$DB_USER -p$DB_PASS -h$DB_HOST $DB_NAME" > $1
