@@ -16,6 +16,11 @@
     </script>
   </head>
   <body <?php body_class(); ?>>
+    <div id="APEX-root"></div>
+　　　<script>
+　　　　!function(d,s,id){var
+　　　　Js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://zaiko.io/widgets/all.js.php";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","APEX-jssdk");
+　　　</script>
     <div class="background"></div>
     <?php if ( is_front_page() ) : ?>
     <video
@@ -24,7 +29,7 @@
       width="100%"
       muted autoplay loop
       preload="metadata"
-      src="//d1rm4mnq8j8biv.cloudfront.net/files/vol-09.mp4"
+      src="wp-content/themes/app/assets/images/SD10_CM.mp4"
       poster="<?php echo get_template_directory_uri(); ?>/assets/images/vol-08-cm-poster.jpg">
     </video>
     <div id="header-video-scroll-button" class="header-video-scroll-button"></div>
@@ -33,7 +38,7 @@
       <header>
         <nav class="navbar navbar-expand-md navbar-expand-lg">
           <a id="nav-logo" class="navbar-brand" href="/">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/brand.png" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/SD_logo_yoko_w_ver.3.png" />
           </a>
           <button
             class="navbar-toggler navbar-white"

@@ -708,3 +708,7 @@ ul.navbar-nav {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+.zaiko-ticket {
+  width: 300px;
+}
