@@ -6,6 +6,6 @@ if ( ! function_exists( 'spin_get_event' ) ) :
         if (count($matches) >= 2) {
             return $matches[1];
         }
-        return 'vol-10';
+        return 'vol-11';
     }
 endif;
