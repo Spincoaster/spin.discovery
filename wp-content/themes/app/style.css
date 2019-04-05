@@ -36,9 +36,14 @@ a {
   z-index: -2;
   background-color: #000;
   background-size: cover;
-  background-image: url('./assets/images/in_kobe.png');
+  background-image: url('./assets/images/in_kobe_tate.png');
   background-repeat: no-repeat;
 }
+
+.andmore {
+  font-size: 20px;
+}
+
 
 @media (max-width: 768px) {
   .background {
