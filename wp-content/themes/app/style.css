@@ -36,7 +36,7 @@ a {
   z-index: -2;
   background-color: #000;
   background-size: cover;
-  background-image: url('./assets/images/in_kobe_tate.png');
+  background-image: url('//d1rm4mnq8j8biv.cloudfront.net/files/in_kobe_tate.png');
   background-repeat: no-repeat;
 }
 
@@ -47,7 +47,7 @@ a {
 
 @media (max-width: 768px) {
   .background {
-    background-image: url('./assets/images/in_kobe_tate.png')
+    background-image: url('//d1rm4mnq8j8biv.cloudfront.net/files/assets/images/in_kobe_tate.png')
   }
 }
 
