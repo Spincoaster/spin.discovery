@@ -57,6 +57,7 @@
               <li class="nav-item"><a class="nav-link" href="/events/<?= $event ?>" >LINEUP</a></li>
               <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/about" >ABOUT</a></li>
               <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/ticket" >TICKET</a></li>
+              <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/history" >HISTORY</a></li>
               <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/access" >ACCESS</a></li>
             </ul>
           </div><!--/.nav-collapse -->
