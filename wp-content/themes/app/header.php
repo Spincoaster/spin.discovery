@@ -23,7 +23,7 @@
 　　　</script>
     <div class="background"></div>
     <?php if ( is_front_page() ) : ?>
-    <!-- <video
+    <video
       id="header-video"
       class="header-video"
       width="100%"
@@ -32,7 +32,7 @@
       src="//d1rm4mnq8j8biv.cloudfront.net/files/vol-10.mp4"
       poster="<?php echo get_template_directory_uri(); ?>/assets/images/vol-08-cm-poster.jpg">
     </video>
-    <div id="header-video-scroll-button" class="header-video-scroll-button"></div> -->
+    <div id="header-video-scroll-button" class="header-video-scroll-button"></div>
     <?php endif; ?>
     <div id="page" class="site">
       <header>
