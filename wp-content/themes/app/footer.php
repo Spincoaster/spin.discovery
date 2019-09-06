@@ -17,7 +17,7 @@
            </div>
 
            <div class="footer_item_twitterIcon">
-             <a  class="social-icon" href="https://twitter.com/Spincoaster">
+             <a  class="social-icon" href="https://twitter.com/Spincoaster_2nd">
                <i class="fab fa-twitter fa-lg fa-fw my-white"></i>
              </a>
            </div>
