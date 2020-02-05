@@ -3,7 +3,7 @@ FROM php:apache
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
 RUN apt-get update
-RUN apt-get install -y sudo less mysql-client
+RUN apt-get install -y sudo less default-mysql-client
 RUN rm -rf /var/lib/apt/lists/*
 RUN curl -o /bin/wp-cli.phar https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 RUN chmod +x /bin/wp-cli.phar
