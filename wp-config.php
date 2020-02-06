@@ -49,9 +49,9 @@ define( 'AS3CF_AWS_SECRET_ACCESS_KEY', getenv('AWS_SECRET_ACCESS_KEY') );
 $table_prefix = getenv('DB_PREFIX');
 
 if ( getenv('ENV') != 'production' ) {
-	 // define( 'WP_DEBUG'        , true );
-	 // define( 'WP_DEBUG_DISPLAY', true );
-	 // define( 'WP_DEBUG_LOG'    , true );
+	 define( 'WP_DEBUG'        , true );
+	 define( 'WP_DEBUG_DISPLAY', true );
+	 define( 'WP_DEBUG_LOG'    , true );
 } else {
 	$_SERVER['HTTPS'] = 'on';
 }
