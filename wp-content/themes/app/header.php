@@ -22,7 +22,7 @@
 　　　　Js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://zaiko.io/widgets/all.js.php";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","APEX-jssdk");
 　　　</script>
     <div class="background"></div>
-    <?php if ( is_front_page() ) : ?>
+    <!-- <?php if ( is_front_page() ) : ?>
     <video
       id="header-video"
       class="header-video"
@@ -33,7 +33,7 @@
       poster="<?php echo get_template_directory_uri(); ?>/assets/images/vol-08-cm-poster.jpg">
     </video>
     <div id="header-video-scroll-button" class="header-video-scroll-button"></div>
-    <?php endif; ?>
+    <?php endif; ?> -->
     <div id="page" class="site">
       <header>
         <nav class="navbar navbar-expand-md navbar-expand-lg">
