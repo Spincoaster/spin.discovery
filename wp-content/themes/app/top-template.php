@@ -35,7 +35,7 @@ Template Name: top
     }
   }
   ?>
-  <!-- <p class="andmore">...and more!</p> -->
+  <p class="andmore">...and more!</p>
 </div>
 
 
@@ -95,7 +95,7 @@ Template Name: top
 </div>
 
 <br>
-<br>
+<!-- <br>
 
 <div class="row">
   <div class="col-lg-2 col-md-1 col-sm-1">
@@ -106,7 +106,7 @@ Template Name: top
   </div>
 </div>
 
-<br>
+<br> -->
 <br>
 
 
