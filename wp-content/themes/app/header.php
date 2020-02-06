@@ -71,7 +71,7 @@
       endif;
       if ( is_front_page() ) :
         get_template_part( 'template-parts/header/header', 'image' );
-        echo '<div id="header-video-button" class="header-video-button"></div>';
+        // echo '<div id="header-video-button" class="header-video-button"></div>';
       endif;
       ?>
       <div class="site-content-contain">
