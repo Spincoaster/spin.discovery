@@ -35,7 +35,7 @@ Template Name: top
     }
   }
   ?>
-  <p class="andmore">...and more!</p>
+  <!-- <p class="andmore">...and more!</p> -->
 </div>
 
 
