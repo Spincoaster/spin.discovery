@@ -17,22 +17,25 @@
   </head>
   <body <?php body_class(); ?>>
     <div id="APEX-root"></div>
-　　　<script>
-　　　　!function(d,s,id){var
-　　　　Js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://zaiko.io/widgets/all.js.php";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","APEX-jssdk");
-　　　</script>
+    <script>
+     !function(d,s,id){var
+       Js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://zaiko.io/widgets/all.js.php";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","APEX-jssdk");
+    </script>
+    
     <div class="background"></div>
-    <?php if ( is_front_page() ) : ?>
-    <video
-      id="header-video"
-      class="header-video"
-      width="100%"
-      muted autoplay loop
-      preload="metadata"
-      src="//d1rm4mnq8j8biv.cloudfront.net/files/vol-13.mp4"
-      poster="<?php echo get_template_directory_uri(); ?>/assets/images/vol-08-cm-poster.jpg">
-    </video>
-    <div id="header-video-scroll-button" class="header-video-scroll-button"></div>
+    <?php echo get_the_id() ?>
+    <?php $video_url = get_post_meta(get_the_id(), 'video', true); ?>
+    <?php if ( !empty($video_url) ) : ?>
+      <video
+        id="header-video"
+        class="header-video"
+        width="100%"
+        muted autoplay loop
+        preload="metadata"
+        src="<?php echo get_post_meta(get_the_id(), 'video', true); ?>"
+        poster="<?php echo get_template_directory_uri(); ?>/assets/images/vol-08-cm-poster.jpg">
+      </video>
+      <div id="header-video-scroll-button" class="header-video-scroll-button"></div>
     <?php endif; ?>
     <div id="page" class="site">
       <header>
