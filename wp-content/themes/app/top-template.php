@@ -98,8 +98,7 @@ Template Name: top
 
   <div class="col-lg-6 col-md-6 col-sm-12">
     <h1 class="area-title">EVENT PLAYLIST</h1>
-    <iframe src="<?php $playlist = get_post_meta(get_the_id(), 'playlist', true); ?>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    <!-- <iframe src="https://open.spotify.com/embed/user/spincoaster/playlist/5aB2BqNYfsBRQUeY5qHOAm" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+    <iframe src="<?php echo get_post_meta(get_the_id(), 'playlist', true); ?>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
   </div>
 </div>
 
