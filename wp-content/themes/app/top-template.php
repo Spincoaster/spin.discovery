@@ -34,6 +34,7 @@ Template Name: top
       echo '</div>';
     }
   }
+  wp_reset_query();
   ?>
   <p class="andmore">
     <?php $and_more = get_post_meta(get_the_id(), 'and-more', true);
@@ -63,6 +64,7 @@ Template Name: top
             echo '<div class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">'.$time_string.'　'.$title.'</a></div>';
           endwhile;
       endif;
+      wp_reset_query();
       ?>
 
     </div><br><br>
