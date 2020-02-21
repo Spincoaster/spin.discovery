@@ -42,7 +42,6 @@
       </div>
   </div>
 
-    <?php echo get_the_id() ?>
     <?php $video_url = get_post_meta(get_the_id(), 'video', true); ?>
     <?php if ( !empty($video_url) ) : ?>
       <video
