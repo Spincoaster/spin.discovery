@@ -23,37 +23,16 @@
     </script>
 
   <div class="background">
-    <head>
-      <style>
-
-      .background {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        z-index: -2;
-        background-color: #000;
-        background-size: cover;
-        background-image:
-          <?php $image_url = get_post_meta(get_the_id(), 'header-image', true);
-            if ( ! empty( $image_url ) ) {
-              echo $image_url;
-            }
-           ?>
-        }
-
-      @media (max-width: 768px) {
-        .background {
-          background-image:
-           <?php $sp_image_url = get_post_meta(get_the_id(), 'sp-header-image', true);
-              if ( ! empty( $sp_image_url ) ) {
-                echo $sp_image_url;
-              }
-             ?>
-        }
-      }
-
-      </style>
-    </head>
+      <?php
+        $header_image_id = get_post_meta(get_the_id(), 'header-image', true);
+        $header_image_src = wp_get_attachment_image($header_image_id, 'large', false, array( 'class' => 'header-image' ) );
+        echo $header_image_src;
+      ?>
+      <?php
+        $sp_header_image_id = get_post_meta(get_the_id(), 'sp-header-image', true);
+        $sp_header_image_src = wp_get_attachment_image($sp_header_image_id, 'large', false, array( 'class' => 'sp-header-image' ) );
+        echo $sp_header_image_id;
+      ?>
   </div>
 
     <?php echo get_the_id() ?>
