@@ -23,18 +23,18 @@
     </script>
 
     <?php
-      $header_image_id = get_post_meta(get_the_id(), 'header-image', true);
-      $header_image_src = wp_get_attachment_image_src($header_image_id, 'large', false);
-      $sp_header_image_id = get_post_meta(get_the_id(), 'sp-header-image', true);
-      $sp_header_image_src = wp_get_attachment_image_src($sp_header_image_id, 'large', false);
+      $background_image_id = get_post_meta(get_the_id(), 'background-image', true);
+      $background_image_src = wp_get_attachment_image_src($background_image_id, 'large', false);
+      $sp_background_image_id = get_post_meta(get_the_id(), 'sp-background-image', true);
+      $sp_background_image_src = wp_get_attachment_image_src($sp_background_image_id, 'large', false);
     ?>
-    <?php if ( !empty($header_image_src) ) : ?>
-      <div class="background" style="background-image: url(<?php echo $header_image_src[0]; ?>)">
+    <?php if ( !empty($background_image_src) ) : ?>
+      <div class="background" style="background-image: url(<?php echo $background_image_src[0]; ?>)">
       </div>
     <?php endif ?>
 
-    <?php if ( !empty($sp_header_image_src) ) : ?>
-      <div class="background background-sp" style="background-image: url(<?php echo $sp_header_image_src[0]; ?>)">
+    <?php if ( !empty($background_image_src) ) : ?>
+      <div class="background background-sp" style="background-image: url(<?php echo $sp_background_image_src[0]; ?>)">
       </div>
     <?php endif ?>
 
