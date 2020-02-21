@@ -71,7 +71,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav navbar-right mr-auto">
-              <li id="nav-home" class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+              <li id="nav-home" class="nav-item"><a class="nav-link" href="/<?= $event ?>">HOME</a></li>
               <li class="nav-item"><a class="nav-link" href="/events/<?= $event ?>" >LINEUP</a></li>
               <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/about" >ABOUT</a></li>
               <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/ticket" >TICKET</a></li>
