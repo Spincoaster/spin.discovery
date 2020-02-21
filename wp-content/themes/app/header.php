@@ -17,22 +17,40 @@
   </head>
   <body <?php body_class(); ?>>
     <div id="APEX-root"></div>
-　　　<script>
-　　　　!function(d,s,id){var
-　　　　Js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://zaiko.io/widgets/all.js.php";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","APEX-jssdk");
-　　　</script>
-    <div class="background"></div>
-    <?php if ( is_front_page() ) : ?>
-    <video
-      id="header-video"
-      class="header-video"
-      width="100%"
-      muted autoplay loop
-      preload="metadata"
-      src="//d1rm4mnq8j8biv.cloudfront.net/files/vol-13.mp4"
-      poster="<?php echo get_template_directory_uri(); ?>/assets/images/vol-08-cm-poster.jpg">
-    </video>
-    <div id="header-video-scroll-button" class="header-video-scroll-button"></div>
+    <script>
+     !function(d,s,id){var
+       Js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://zaiko.io/widgets/all.js.php";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","APEX-jssdk");
+    </script>
+
+    <?php
+      $event_top_page = get_page_by_path(spin_get_event());
+      $background_image_id = get_post_meta($event_top_page->ID, 'background-image', true);
+      $background_image_src = wp_get_attachment_image_src($background_image_id, 'large', false);
+      $sp_background_image_id = get_post_meta($event_top_page->ID, 'sp-background-image', true);
+      $sp_background_image_src = wp_get_attachment_image_src($sp_background_image_id, 'large', false);
+    ?>
+    <?php if ( !empty($background_image_src) ) : ?>
+      <div class="background" style="background-image: url(<?php echo $background_image_src[0]; ?>)">
+      </div>
+    <?php endif ?>
+
+    <?php if ( !empty($background_image_src) ) : ?>
+      <div class="background background-sp" style="background-image: url(<?php echo $sp_background_image_src[0]; ?>)">
+      </div>
+    <?php endif ?>
+
+    <?php $video_url = get_post_meta(get_the_id(), 'video', true); ?>
+    <?php if ( !empty($video_url) ) : ?>
+      <video
+        id="header-video"
+        class="header-video"
+        width="100%"
+        muted autoplay loop
+        preload="metadata"
+        src="<?php echo get_post_meta(get_the_id(), 'video', true); ?>"
+        poster="<?php echo get_template_directory_uri(); ?>/assets/images/vol-08-cm-poster.jpg">
+      </video>
+      <div id="header-video-scroll-button" class="header-video-scroll-button"></div>
     <?php endif; ?>
     <div id="page" class="site">
       <header>

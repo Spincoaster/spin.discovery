@@ -17,7 +17,7 @@ jQuery(function() {
       h = width * imageHeight / imageWidth;
     }
 
-    $('.background').css({
+    $('.background-sp').css({
       backgroundSize: w + 'px ' + h + 'px'
     });
   }

@@ -36,8 +36,10 @@ a {
   z-index: -2;
   background-color: #000;
   background-size: cover;
-  background-image: url('//d1rm4mnq8j8biv.cloudfront.net/wp-content/uploads/2019/09/05165337/bg.jpg');
   background-repeat: no-repeat;
+}
+.background-sp {
+  display: none;
 }
 
 .andmore {
@@ -47,7 +49,10 @@ a {
 
 @media (max-width: 768px) {
   .background {
-    background-image: url('//d1rm4mnq8j8biv.cloudfront.net/wp-content/uploads/2019/09/05164046/bg_sp.jpg')
+    display: none;
+  }
+  .background-sp {
+    display: block;
   }
 }
 
@@ -77,18 +82,22 @@ a {
 }
 
 .artist-title {
-  font-size: 28px;
   display: flex;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
   justify-content: space-between;
 }
 
-.artist-title-name {
+/* .artist-title-name {
   display: flex;
-}
+} */
 
 .artist-title-time {
   display: flex;
   color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  justify-content: space-between;
 }
 
 .artist-image {
