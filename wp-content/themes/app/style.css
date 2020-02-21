@@ -36,7 +36,6 @@ a {
   z-index: -2;
   background-color: #000;
   background-size: cover;
-  /* background-image: url('//d1rm4mnq8j8biv.cloudfront.net/wp-content/uploads/2019/09/05165337/bg.jpg'); */
   background-repeat: no-repeat;
 }
 
@@ -47,7 +46,6 @@ a {
 
 @media (max-width: 768px) {
   .background {
-    /* background-image: url('//d1rm4mnq8j8biv.cloudfront.net/wp-content/uploads/2019/09/05164046/bg_sp.jpg'); */
   }
 }
 

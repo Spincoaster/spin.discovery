@@ -28,6 +28,7 @@
         $header_image_src = wp_get_attachment_image($header_image_id, 'large', false, array( 'class' => 'header-image' ) );
         echo $header_image_src;
       ?>
+      
       <?php
         $sp_header_image_id = get_post_meta(get_the_id(), 'sp-header-image', true);
         $sp_header_image_src = wp_get_attachment_image($sp_header_image_id, 'large', false, array( 'class' => 'sp-header-image' ) );
