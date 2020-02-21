@@ -21,8 +21,41 @@
      !function(d,s,id){var
        Js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://zaiko.io/widgets/all.js.php";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","APEX-jssdk");
     </script>
-    
-    <div class="background"></div>
+
+  <div class="background">
+    <head>
+      <style>
+
+      .background {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        background-color: #000;
+        background-size: cover;
+        background-image:
+          <?php $image_url = get_post_meta(get_the_id(), 'header-image', true);
+            if ( ! empty( $image_url ) ) {
+              echo $image_url;
+            }
+           ?>
+        }
+
+      @media (max-width: 768px) {
+        .background {
+          background-image:
+           <?php $sp_image_url = get_post_meta(get_the_id(), 'sp-header-image', true);
+              if ( ! empty( $sp_image_url ) ) {
+                echo $sp_image_url;
+              }
+             ?>
+        }
+      }
+
+      </style>
+    </head>
+  </div>
+
     <?php echo get_the_id() ?>
     <?php $video_url = get_post_meta(get_the_id(), 'video', true); ?>
     <?php if ( !empty($video_url) ) : ?>
