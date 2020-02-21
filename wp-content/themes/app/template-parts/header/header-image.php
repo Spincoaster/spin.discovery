@@ -3,10 +3,12 @@
     <!-- <img class="header-image" src="<?= get_template_directory_uri(); ?>/assets/images/SD13_logo.png"> -->
 
     <?php
-      $top_logo_id = get_post_meta(get_the_id(), 'top-logo', true);
-      $top_logo_src = wp_get_attachment_image($top_logo_id, 'large', false, array( 'class' => 'top-logo' ) );
-      echo '<div class="header-image">'.$top_logo_src.'</div>';
+      $header_image_id = get_post_meta(get_the_id(), 'header-image', true);
+      $header_image_src = wp_get_attachment_image_src($header_image_id, 'large', false);
     ?>
+    <?php if ( !empty($header_image_src) ) : ?>
+      <img class="header-image" src="<?php echo $header_image_src[0]; ?>" />
+    <?php  endif ?>
 
     <div class="header-image-caption">
      <p>
