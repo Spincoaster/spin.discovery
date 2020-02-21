@@ -22,25 +22,21 @@
        Js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://zaiko.io/widgets/all.js.php";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","APEX-jssdk");
     </script>
 
-  <div class="background">
-      <?php
-        $header_image_id = get_post_meta(get_the_id(), 'header-image', true);
-        $header_image_src = wp_get_attachment_image($header_image_id, 'large', false, array( 'class' => 'header-image' ) );
-        echo $header_image_src;
-      ?>
-  </div>
-
-  <div class="container">
-      <div class="row">
-        <div class="col-xs-num">
-          <?php
-           $sp_header_image_id = get_post_meta(get_the_id(), 'sp-header-image', true);
-           $sp_header_image_src = wp_get_attachment_image($sp_header_image_id, 'large', false, array( 'class' => 'sp-header-image' ) );
-           echo $sp_header_image_id;
-          ?>
-        </div>
+    <?php
+      $header_image_id = get_post_meta(get_the_id(), 'header-image', true);
+      $header_image_src = wp_get_attachment_image_src($header_image_id, 'large', false);
+      $sp_header_image_id = get_post_meta(get_the_id(), 'sp-header-image', true);
+      $sp_header_image_src = wp_get_attachment_image_src($sp_header_image_id, 'large', false);
+    ?>
+    <?php if ( !empty($header_image_src) ) : ?>
+      <div class="background" style="background-image: url(<?php echo $header_image_src[0]; ?>)">
       </div>
-  </div>
+    <?php endif ?>
+
+    <?php if ( !empty($sp_header_image_src) ) : ?>
+      <div class="background background-sp" style="background-image: url(<?php echo $sp_header_image_src[0]; ?>)">
+      </div>
+    <?php endif ?>
 
     <?php $video_url = get_post_meta(get_the_id(), 'video', true); ?>
     <?php if ( !empty($video_url) ) : ?>

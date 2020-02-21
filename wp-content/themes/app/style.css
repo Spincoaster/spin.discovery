@@ -38,6 +38,9 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.background-sp {
+  display: none;
+}
 
 .andmore {
   font-size: 20px;
@@ -46,6 +49,10 @@ a {
 
 @media (max-width: 768px) {
   .background {
+    display: none;
+  }
+  .background-sp {
+    display: block;
   }
 }
 
