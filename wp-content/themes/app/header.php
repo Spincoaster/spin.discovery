@@ -23,9 +23,10 @@
     </script>
 
     <?php
-      $background_image_id = get_post_meta(get_the_id(), 'background-image', true);
+      $event_top_page = get_page_by_path(spin_get_event());
+      $background_image_id = get_post_meta($event_top_page->ID, 'background-image', true);
       $background_image_src = wp_get_attachment_image_src($background_image_id, 'large', false);
-      $sp_background_image_id = get_post_meta(get_the_id(), 'sp-background-image', true);
+      $sp_background_image_id = get_post_meta($event_top_page->ID, 'sp-background-image', true);
       $sp_background_image_src = wp_get_attachment_image_src($sp_background_image_id, 'large', false);
     ?>
     <?php if ( !empty($background_image_src) ) : ?>
