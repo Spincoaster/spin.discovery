@@ -55,7 +55,7 @@
     <div id="page" class="site">
       <header>
         <nav class="navbar navbar-expand-md navbar-expand-lg">
-          <a id="nav-logo" class="navbar-brand" href="/">
+          <a id="nav-logo" class="navbar-brand" href="/<?= $event ?>">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/SD_logo_yoko_w_ver.3.png" />
           </a>
           <button
