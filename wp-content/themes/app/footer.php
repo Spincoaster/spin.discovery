@@ -1,21 +1,3 @@
-  <?php
-    $event_top_page = get_page_by_path(spin_get_event());
-    $banner_image_id = get_post_meta($event_top_page->ID, 'banner-image', true);
-    $banner_image_src = wp_get_attachment_image_src($banner_image_id, 'large', false);
-    $banner_url = get_post_meta($event_top_page->ID, 'banner-url', true);
-  ?>
-  <?php if ( ! empty( $banner_image_src ) ) : ?>
-    <div class="row">
-      <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-12">
-        <a href="<?php echo $banner_url ?>" target="_blank">
-          <img src="<?php echo $banner_image_src[0]; ?>" style="width: 100%;"/>
-        </a>
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-  <?php endif ?>
   <footer id="footer">
    <div class="site_footer">
      <div class="col-lg-12 col-md-12 col-sm-12">
