@@ -7,4 +7,4 @@ fi
 
 OPTS="--path=${WP_PATH} --allow-root"
 
-cat $1 | docker exec -i `docker-compose ps -q web` wp db import ${OPTS} -
+cat $1 | docker exec -i `docker-compose ps -q wordpress` wp db import ${OPTS} -
