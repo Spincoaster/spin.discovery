@@ -1,7 +1,7 @@
 <?php
 /*
-Template Name: top
-*/
+   Template Name: top
+ */
 ?>
 
 <?php get_header(); ?>
@@ -13,6 +13,7 @@ Template Name: top
     <h1 class="area-title">LINEUP</h1>
   </div>
   <?php
+  $column_width = get_post_meta(get_the_id(), 'artist-thumb-column-width', true);
   query_posts( array (
     'post_type' => 'artist',
     'events' => $event,
@@ -27,7 +28,7 @@ Template Name: top
       $image_id = get_post_meta(get_the_id(), 'image', true);
       $image_src = wp_get_attachment_image($image_id, 'large', false, array( 'class' => 'artist-image' ) );
 
-      echo '<div class="col-lg-3 col-sm-12 artist-container">';
+      echo '<div class="col-lg-'.$column_width.' col-sm-12 artist-container">';
       echo '<a href="/events/'.$event.'/#'.$title.'">'.$image_src.'</a>';
       echo '<div class="artist-title"><a href="/events/'.$event.'/#'.$title.'" style="color:#fff;">'.$title.'</a><a class="artist-title-time">'.$cast_time.'</a></div>';
       echo '</div>';
