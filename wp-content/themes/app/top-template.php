@@ -14,10 +14,13 @@
   </div>
   <?php
   $column_width = get_post_meta(get_the_id(), 'artist-thumb-column-width', true);
+  $column_width_md = get_post_meta(get_the_id(), 'artist-thumb-column-width-md', true);
+  $column_width_sm = get_post_meta(get_the_id(), 'artist-thumb-column-width-sm', true);
+  $column_width_xs = get_post_meta(get_the_id(), 'artist-thumb-column-width-xs', true);
   query_posts( array (
     'post_type' => 'artist',
     'events' => $event,
-    'posts_per_page' => 10,
+    'posts_per_page' => 100,
   ) );
 
   if ( have_posts() ) {
@@ -28,7 +31,12 @@
       $image_id = get_post_meta(get_the_id(), 'image', true);
       $image_src = wp_get_attachment_image($image_id, 'large', false, array( 'class' => 'artist-image' ) );
 
-      echo '<div class="col-lg-'.$column_width.' col-sm-12 artist-container">';
+      echo '<div class="artist-container';
+      echo ' col-lg-'.$column_width;
+      echo ' col-md-'.$column_width_md;
+      echo ' col-sm-'.$column_width_sm;
+      echo ' col-'.$column_width_xs;
+      echo '">';
       echo '<a href="/events/'.$event.'/#'.$title.'">'.$image_src.'</a>';
       echo '<div class="artist-title"><a href="/events/'.$event.'/#'.$title.'" style="color:#fff;">'.$title.'</a><a class="artist-title-time">'.$cast_time.'</a></div>';
       echo '</div>';
