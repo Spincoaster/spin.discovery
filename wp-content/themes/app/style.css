@@ -42,9 +42,6 @@ a {
   display: none;
 }
 
-.andmore {
-  font-size: 20px;
-}
 
 
 @media (max-width: 768px) {
@@ -108,6 +105,15 @@ a {
 .col-6 .artist-image {
   height: calc(50vw - 30px);
 }
+
+.andmore {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0 32px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+}
+
 .col-12 .artist-image {
   height: calc(100vw);
 }

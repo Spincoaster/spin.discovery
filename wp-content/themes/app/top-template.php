@@ -44,13 +44,15 @@
   }
   wp_reset_query();
   ?>
-  <p class="andmore">
-    <?php $and_more = get_post_meta(get_the_id(), 'and-more', true);
-      if ( ! empty( $and_more ) ) {
-       echo $and_more;
-    }
-    ?>
-  </p>
+  <?php $and_more = get_post_meta(get_the_id(), 'and-more', true);
+  if ( ! empty( $and_more ) ) {
+    echo '<div class="row">';
+    echo '  <p class="andmore">';
+    echo $and_more;
+    echo '  </p>';
+    echo '</div>';
+  }
+  ?>
 </div>
 
 
