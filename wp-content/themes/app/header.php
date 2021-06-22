@@ -72,17 +72,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav navbar-right mr-auto">
               <li id="nav-home" class="nav-item"><a class="nav-link" href="/<?= $event ?>">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/ticket" >TICKET</a></li>
               <?php if ($event == 'SPECIAL') : ?>
                 <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/guideline" >GUIDELINE</a></li>
               <?php endif; ?>
               <li class="nav-item"><a class="nav-link" href="/events/<?= $event ?>" >LINEUP</a></li>
               <?php if ($event == 'SPECIAL') : ?>
                 <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/timetable" >TIMETABLE</a></li>
+                <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/map-food" >MAP/FOOD</a></li>
               <?php endif; ?>
               <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/about" >ABOUT</a></li>
-              <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/ticket" >TICKET</a></li>
-              <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/history" >HISTORY</a></li>
               <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/access" >ACCESS</a></li>
+              <li class="nav-item"><a class="nav-link" href="/<?= $event ?>/history" >HISTORY</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </nav>
