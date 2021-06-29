@@ -57,7 +57,7 @@ if ( is_tax( 'events' ) ) {
       echo '     </div>';
     }
 
-    if ($twitter != '') {
+    if ($instagram != '') {
       echo '     <div class="social-icon lineup-social-icon">';
       echo '       <a href="'.$instagram.'"><i class="fab fa-instagram fa-lg fa-fw my-white"></i></a>';
       echo '     </div>';
