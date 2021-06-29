@@ -84,9 +84,9 @@
     <h1 class="area-title">ABOUT</h1>
     <div class="concept">
       <?php
-          $page_info = get_page_by_path('/'.$event.'/about');
-          $page = get_post($page_info);
-          echo $page->post_content;
+      $page_info = get_page_by_path('/'.$event.'/about');
+      $page = get_post($page_info);
+      echo apply_filters( 'the_content', $page->post_content );
       ?>
     </div>
 
@@ -101,7 +101,7 @@
       <?php
       $page_info = get_page_by_path('/'.$event.'/ticket');
       $page = get_post($page_info);
-      echo $page->post_content;
+      echo apply_filters( 'the_content', $page->post_content );
       ?>
     </div>
   </div><!--ticket-->
