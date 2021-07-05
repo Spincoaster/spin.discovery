@@ -1,3 +1,9 @@
+<a href="https://spincoaster.zaiko.io/e/sds2021" target="_blank">
+  <img class="floating-ticket" src="<?php echo get_template_directory_uri(); ?>/assets/images/ticket_b.png" alt="ticket_link">
+</a>
+<br>
+<br>
+<br>
 <p><h3><div style="text-align:center;"> SPONSORS</div></h3></p>
 
 <div style="text-align:center;">

@@ -770,3 +770,11 @@ ul.navbar-nav {
 .zaiko-ticket {
   width: 300px;
 }
+
+.floating-ticket {
+  position: fixed;
+  z-index: 100;
+  bottom: 8px;
+  right: 8px;
+  width: 256px;
+}
